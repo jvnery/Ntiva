@@ -296,8 +296,8 @@
     gap: 24px;
 }
 
-.block-trilha-cartao-conteudo .block-metas div{
-    align-items: flex-end;
+.block-trilha-cartao-conteudo .block-metas h6{
+    padding: 0;
 }
 
 /**/
