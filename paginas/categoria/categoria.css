@@ -1,0 +1,537 @@
+@import url(../custom.css);
+
+/* SEÇÂO 1 */
+
+.inicio{
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 212px 0;
+}
+
+.block-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.block-inicio p{
+    color: #545457;
+    margin-top: 8px;
+}
+
+/**/
+
+/* RESPONSIVIDADE SEÇÂO 1 */
+
+@media (max-width:1024px){
+    .inicio{
+        height:fit-content;
+        padding: 150px 0 250px;
+    }
+}
+
+@media (max-width:767px){
+    .inicio{
+        padding: 60px 0 200px;
+    }
+
+}
+
+/**
+
+/* SEÇÂO 2 */
+
+.block-codigo{
+    margin: -110px 0 64px 0;
+    display: flex;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid var(--gray-200, #CACBD1);
+    background: var(--gray-50, #FAFAFA);
+    box-shadow: 0px 24px 64px -16px rgba(84, 84, 87, 0.48);
+}
+
+.block-codigo-destaque{
+    padding: 150px 90px 230px 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 48%;
+}
+
+.block-codigo-destaque h2{
+    line-height: 48px; /* 120% */;
+}
+
+.block-codigo-conteudo{
+    padding: 92px 32px;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block-codigo-conteudo span{
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: rgba(43, 153, 255, 0.08);
+    color: #2B99FF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.block-codigo-conteudo h2{
+    margin: 16px 0 8px 0;
+}
+
+.block-codigo-conteudo p{
+    color: var(--gray-500, #6D6D70);
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+}
+
+.block-metas{
+    padding: 28px 0 52px 0;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.block-metas div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.block-metas h6{
+    color: var(--gray-500, #6D6D70);
+    font-weight: 400;
+}
+
+.codigo h3 b{
+    font-weight: 500;
+}
+
+/**/
+
+/* RESPONSIVIDADE SEÇÃO 2 */
+
+@media (max-width:1400px){
+    .block-codigo-conteudo{
+        padding: 32px;
+    }
+}
+
+@media (max-width:1024px){
+    .codigo .col-md-10{
+        width: 100%;
+    }
+    
+    .block-codigo-destaque{
+        padding: 80px 32px 60px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .block-codigo-conteudo{
+        width: 100%;
+    }
+
+    .codigo h3{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:767px){
+    .block-codigo{
+        margin: -100px 0 60px 0;
+        flex-direction: column;
+    }
+
+    .block-codigo-destaque{
+        padding: 40px;
+        width: 100%;
+        background-position: left;
+    }
+
+    .block-codigo-destaque h2{
+        line-height: 140%;
+    }
+
+    .block-codigo-conteudo{
+        padding: 32px;
+    }
+
+    .block-codigo-conteudo span {
+        font-size: 12px;
+        line-height: 114%;
+        padding: 8px 12px;
+    }
+
+    .block-codigo-conteudo p {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .block-metas{
+        padding: 16px 0 32px 0;
+        gap: 16px;
+    }
+
+}
+
+/**/
+
+/**/
+
+/*SEÇÃO 3*/
+
+.webinars{
+    padding: 64px 0 80px 0;
+}
+
+.webinars .container{
+    width: 1192px;
+}
+
+.block-webinars-topico{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-200, #CACBD1);
+    padding-bottom: 24px;
+}
+
+.block-webinars-topico h4{
+    color: var(--gray-700, #363638);
+}
+
+.block-webinars-topico-pesquisa{
+    display: flex;
+    gap: 32px;
+}
+
+.block-webinars-topico-pesquisa input,
+.block-webinars-topico-pesquisa input:focus-visible{
+    border: 0;
+    outline: 0;
+}
+
+.block-webinars-topico-pesquisa .data:focus-visible{
+    border: auto;
+    outline: auto;
+}
+
+.block-webinars-topico-pesquisa label,
+.block-webinars-topico-pesquisa-filtro select,
+.block-webinars-topico-pesquisa-filtro input{
+    border-radius: 8px;
+    border: 1px solid var(--gray-200, #CACBD1);
+    background: var(--white, #FFF);
+    padding: 4px;
+}
+
+.block-webinars-topico-pesquisa label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 326px;
+}
+
+.block-webinars-topico-pesquisa label input{
+    font-size: 14px;
+    width: 100%;
+}
+
+.block-webinars-topico-pesquisa-filtro{
+    display: flex;
+    gap: 16px;
+}
+
+.block-webinars-topico-pesquisa-filtro input,
+.block-webinars-topico-pesquisa-filtro select{
+    color: var(--gray-700, #363638);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+.block-webinars-topico-pesquisa-filtro .data,
+.block-webinars-topico-pesquisa-filtro .categoria{
+    width: 160px;
+}
+
+.block-webinars-topico-pesquisa-filtro .tipo{
+    width: 120px;
+}
+
+.block-webinars-lista{
+    padding-top: 48px;
+}
+
+.block-webinars-lista-cartao{
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.block-webinars-lista-cartao-miniatura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 65px 80px 65px 90px;
+    height: 216px;
+}
+
+.block-webinars-lista-cartao-miniatura span{
+    font-size: 8.813px;
+    font-weight: 500;
+    line-height: 10.281px; /* 116.667% */
+    letter-spacing: 0.705px;
+}
+
+.block-webinars-lista-cartao-miniatura h2{
+    font-size: 29.375px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.25px; /* 120% */
+}
+
+.block-webinars-lista-cartao-conteudo{
+    padding: 32px 24px;
+    border-radius: 0px 0px 16px 16px;
+    border-right: 2px solid var(--gray-100, #E3E4EB);
+    border-bottom: 2px solid var(--gray-100, #E3E4EB);
+    border-left: 2px solid var(--gray-100, #E3E4EB);
+}
+
+.block-webinars-lista-cartao-conteudo h4{
+    color: var(--gray-900, #0A0A0A);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+}
+
+.block-webinars-lista-cartao-conteudo h6{
+    color: var(--gray-500, #6D6D70);
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.block-metas{
+    padding: 16px 0 0 0;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.block-metas div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.block-metas h6{
+    padding: 0;
+}
+
+/**/
+
+/*RESPONSIVIDADE SEÇÃO 3*/
+
+@media (max-width:1400px){
+    .block-webinars-lista-cartao-miniatura{
+        padding: 65px 70px;
+    }
+}
+
+
+@media (max-width:1024px){
+    .webinars {
+        padding: 0 0 60px 0;
+    }
+
+    .webinars .container{
+        width: 100%;
+    }
+
+    .webinars .col-md-4{
+        width: 50%;
+    }
+
+    .block-webinars-topico{
+        flex-direction: column;
+    }
+
+    .block-webinars-topico-pesquisa{
+        padding-top: 16px;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .block-webinars-topico-pesquisa label{
+        width: 100%;
+    }
+
+    .block-webinars-lista {
+        padding-top: 32px;
+    }
+
+    .block-webinars-lista-cartao {
+        margin-bottom: 40px;
+    }
+
+    .block-webinars-lista-cartao-miniatura{
+        padding: 65px 50px;
+    }
+
+    .block-webinars-lista-cartao-conteudo .block-metas{
+        gap: 8px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:767px){
+
+    .webinars {
+        padding: 0 0 40px 0;
+    }
+
+    .webinars .col-md-4{
+        width: 100%;
+    }
+
+    .block-webinars-topico{
+        text-align: center;
+    }
+
+    .block-webinars-topico-pesquisa{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .block-webinars-lista {
+        padding-top: 24px;
+    }
+
+    .block-webinars-lista-cartao {
+        margin-bottom: 24px;
+    }
+
+    .block-webinars-topico-pesquisa-filtro .data,
+    .block-webinars-topico-pesquisa-filtro .categoria{
+        width: 100%;
+    }
+
+    .block-webinars-topico-pesquisa-filtro .tipo{
+        width: 100%;
+    }
+
+    .block-webinars-lista-cartao-conteudo .block-metas{
+        flex-direction: row;
+    }
+}
+
+
+/**/
+
+/*RESPONSIVIDADE TITULOS*/
+
+@media (max-width:1024px){
+    h1{
+        font-size: 46px;
+        line-height: 128%; /* 128.571% */
+    }
+    
+    h2{
+        font-size: 32px;
+        line-height: 140%; /* 140% */
+    }
+    
+    h3{
+        font-size: 24px;
+        line-height: 150%; /* 150% */
+    }
+    
+    h4{
+        font-size: 20px;
+        line-height: 133%; /* 133.333% */
+    }
+    
+    h5{
+        font-size: 14px;
+        line-height: 150%; /* 150% */
+    }
+    
+    h6{
+        font-size: 14px;
+        line-height: 170%; /* 171.429% */
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 177%; /* 177.778% */
+    }
+    
+    a{
+        font-size: 14px;
+        line-height: 120%; /* 200% */
+    }
+}
+
+@media (max-width:767px){
+    h1{
+        font-size: 32px;
+        line-height: 128%; /* 128.571% */
+    }
+    
+    h2{
+        font-size: 24px;
+        line-height: 140%; /* 140% */
+    }
+    
+    h3{
+        font-size: 20px;
+        line-height: 150%; /* 150% */
+    }
+    
+    h4{
+        font-size: 18px;
+        line-height: 133%; /* 133.333% */
+    }
+    
+    h5{
+        font-size: 12px;
+        line-height: 150%; /* 150% */
+    }
+    
+    h6{
+        font-size: 12px;
+        line-height: 170%; /* 171.429% */
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 177%; /* 177.778% */
+    }
+    
+    a{
+        font-size: 12px;
+        line-height: 120%; /* 200% */
+    }
+}
+
+/**/
